@@ -1,0 +1,31 @@
+Vaccine Notifier
+This software uses any GMAIL account provided by the user to send email notifications whenever a vaccination slot becomes available. It will keep searching for free slots based on the pincodes provided and the age of person until the software is stopped.
+
+Pre-Requisites:
+1)This software can only be run on windows, mac or linux OS(64 bit systems). Android/iOS not supported.
+2)WARNING!! ONLY USE AN EMAIL ID WHICH YOU "DO NOT FREQUENTLY USE" FOR SENDING THE VACCINE EMAIL NOTIFICATIONS.
+3)Go to "https://myaccount.google.com/lesssecureapps" and set "Allow less secure apps" setting to "ON". You may be asked to login if you are not already logged in.
+Note: After you have got your vaccination slot or no longer have any use of this software, revert the above setting without fail.
+
+Steps for running the vaccine notifier:
+1)Download and Unzip "Linux Users.zip" file.
+2)Open the file "vaccine_notifier.properties" in any text reading software like gedit and add following info-
+	a)The emailID/password from which the notification email is to be sent (only gmail allowed)
+	b)Age of person for whom vaccination is required
+	b)All recipient email IDs(any email ids allowed)
+	c)List of pincodes in which you need to search for vaccination slots
+	d)Do not change anything else in the file
+	e)Save the file
+3)Open the application 'Terminal' and navigate into the folder you have extracted using 'cd' command. Please check online on how to navigate folders in terminal.
+4)Run the command "chmod +x vaccine_notifier-linux" and then run another command "chmod +x stop_vaccine_notifier".
+5)Next run the command "./vaccine_notifier-linux" which will start the software and wait.
+6)Whenever a slot is available, all email recipients will receive info on which hospital is available
+
+Steps for stopping vaccine notifier:
+1)run the command "./stop_vaccine_notifier" in the same folder in Terminal.
+
+WARNING: 
+1) Do not add more than 15-20 pincodes at the same time. Sometimes, the cowin website will block you temporarily.
+
+Note:
+1)If you need to change pincodes or any details after you have already run the software, you will need to stop the software,add the details to "vaccine_notifier.properties" and run the software again.
