@@ -6,7 +6,7 @@ const notifier = require('./notifier');
 const constants = require('./constants');
 
 const properties = propertiesReader(process.cwd() + '/vaccine_notifier.properties');
-const PINCODES = properties.get('PINCODES').split(',');
+const PINCODES = properties.get('PINCODES').toString().split(',');
 console.log('Checking following pincodes:' + PINCODES);
 const EMAIL = properties.get('EMAIL');
 const AGE = properties.get('AGE');

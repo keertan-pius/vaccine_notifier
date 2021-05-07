@@ -1,7 +1,7 @@
 let nodemailer = require('nodemailer');
 const propertiesReader = require('properties-reader');
 const properties = propertiesReader(process.cwd() + '/vaccine_notifier.properties');
-const email_recipients = properties.get('EMAIL_RECIPIENTS').split(",");
+const email_recipients = properties.get('EMAIL_RECIPIENTS').toString().split(',');
 
 let nodemailerTransporter = nodemailer.createTransport({
     service: 'Gmail',
