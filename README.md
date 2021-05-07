@@ -32,7 +32,7 @@ All steps for simply running the software can be found in the "installation file
 ## About CoWin
 All vaccination related information used in the project is obtained from the public APIs exposed by the Indian Govt's <a href="https://apisetu.gov.in/public/api/cowin">API Setu</a> website. 
 
-## Getting Started
+## Getting Started for Development
 
 ### Prerequisites
 * Compatible versions of Node.js and npm
